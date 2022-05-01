@@ -1,0 +1,113 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    color: black;
+}
+
+/*
+index.html
+*/
+.intro_bg{
+    padding-bottom: 10rem;
+    background: no-repeat center center;
+    background-size: cover;     
+}
+.intro_text{
+    text-align: center;
+}
+.intro_text>h1{
+    margin:100px auto auto auto;
+    font-size: 80px;
+}
+.intro_text>h3{
+    margin:450px auto 30px auto;
+}
+.intro_text>h1,h3
+{
+    font-weight: bold;
+    color:#fff;
+}
+.intro_text>a{
+    font-weight: bold;
+}
+.intro_text>hr{
+    margin:auto auto 30px auto;
+    width:50%;
+    height:5px;
+    background-color:#fff;
+}
+
+
+/*
+fileUproad.html
+*/
+.head_bg {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-top: calc(6rem + 57px);
+    padding-bottom: 6rem;
+    background: no-repeat center center;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+.fileupload{
+    text-align: center;
+}
+
+.fileupload>a{
+    font-weight: bold;
+}
+.fileupload>hr{
+    margin:auto auto 30px auto;
+    width:80%;
+    height:2px;
+    background-color:black;
+}
+  /* .masthead:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #212529;
+    opacity: 0.5;
+  } */
+  .bi{
+    font-size: 22px;
+    line-height: 22px;
+    color:crimson;
+}
+
+
+
+/**/
+.insert {
+    padding: 20px 30px;
+    display: block;
+    width: 600px;
+    margin: 5vh auto;
+    height: 90vh;
+    border: 1px solid #dbdbdb;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.insert .file-list {
+    height: 200px;
+    overflow: auto;
+    border: 1px solid black;
+    padding: 10px;
+}
+.insert .file-list .filebox p {
+    font-size: 14px;
+    margin-top: 10px;
+    display: inline-block;
+}
+.insert .file-list .filebox .delete i{
+    color: #ff5353;
+    margin-left: 5px;
+}
