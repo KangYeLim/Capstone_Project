@@ -101,7 +101,7 @@ fileUproad.html
     box-sizing: border-box; */
 }
 .fileupload .insert .file-list {
-    height: 100px;
+    height: 200px;
     overflow: auto;
     border: 1px solid black;
     padding: 10px;
@@ -115,3 +115,6 @@ fileUproad.html
     color: #ff5353;
     margin-left: 5px;
 }
+
+
+
