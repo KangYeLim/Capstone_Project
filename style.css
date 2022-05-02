@@ -76,6 +76,7 @@ fileUproad.html
     background-color: #212529;
     opacity: 0.5;
   } */
+  
   .bi{
     font-size: 22px;
     line-height: 22px;
@@ -88,19 +89,19 @@ fileUproad.html
 .fileupload .insert {
     padding: 20px 30px;
     display: block;
-    width: 600px;
-   margin: 5vh auto;
+    width: 450px;
+    margin: 5vh auto;
     
-   /*  height: 90vh; */
+    /* height: 90vh;  */
    
-   /* border: 1px solid red; */
+    /* border: 1px solid red; */
 
     /* -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; */
 }
 .fileupload .insert .file-list {
-    height: 200px;
+    height: 100px;
     overflow: auto;
     border: 1px solid black;
     padding: 10px;
