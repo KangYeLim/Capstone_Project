@@ -20,47 +20,70 @@
           window.parent.postMessage("resize", "*");
         }
     </script> -->
-
-
 </head>
+
 <body>
-    <div class="head_bg" style="background-image: url('images/background2.png')" ></div>
+    <header style="background-image: url('images/background2.png')"></header>
 
-    <div class="fileupload">
-        <h2>검사할 하수도관의 CCTV 이미지파일을 첨부해주세요</h2>       
-               
-            <!-- 파일 코드 1-->
-        <div class="insert">
-            <form method="POST" onsubmit="return false;" enctype="multipart/form-data">
-                
-                <input type="file" onchange="addFile(this);" multiple />
-                <input type="submit">
-                <div class="file-list"></div>
-                
-            </form>
-        </div>
+    <main>
+        <section  id="page1">
+            <div class="fileupload">
+                <h2>검사할 하수도관의 CCTV 이미지파일을 첨부해주세요</h2>       
+                    
+                    <!-- 파일 코드 1-->
+                <div class="insert">
+                    <form method="POST" onsubmit="return false;" enctype="multipart/form-data">
+                        <!-- <label className="input-file-button" for="input-file" class="btn btn-primary">파일 선택</label> -->
+                        <input type="file" id="input-file" onchange="addFile(this);" multiple />
+                        <!-- <input type="file" id="input-file" style = "display:none;" onchange="addFile(this);" multiple /> -->
+        
+                        <input type="submit" >
+                        <div class="file-list"></div>
+                    </form>
+                </div>
+        
+        
+                <!-- 아이콘 참고-->
+                <!-- <i class="bi bi-folder-plus"></i>
+                <div class="input-group w-50">
+                    <span class="input-group-text" id="basic-addon1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder2" viewBox="0 0 16 16">
+                            <path d="M1 3.5A1.5 1.5 0 0 1 2.5 2h2.764c.958 0 1.76.56 2.311 1.184C7.985 3.648 8.48 4 9 4h4.5A1.5 1.5 0 0 1 15 5.5v7a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 12.5v-9zM2.5 3a.5.5 0 0 0-.5.5V6h12v-.5a.5.5 0 0 0-.5-.5H9c-.964 0-1.71-.629-2.174-1.154C6.374 3.334 5.82 3 5.264 3H2.5zM14 7H2v5.5a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5V7z"/>
+                        </svg>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="basic-addon1">
+                </div> -->
+                <div class="detect_btn">
+                    <a href="#page2" class="btn btn-outline-secondary btn-lg ">결함 탐지하기</a>
+                </div>
+                <hr> 
+            </div>
+        </section>
+        
+        <section  id="page2">
+            
+            <!-- <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                        </div>
+                   </div>
+                </div>
+            </div> -->
+            <div class="fileupload">
+                     
+        
+                <div class="show_detect_btn">
+                    <a href="#page1" class="btn btn-outline-secondary btn-lg ">탐지 결과 보기</a>
+        
+                </div>
+                <hr> 
+            </div>
+        </section>
 
-
-        <!-- 아이콘 참고-->
-        <!-- <i class="bi bi-folder-plus"></i>
-        <div class="input-group w-50">
-            <span class="input-group-text" id="basic-addon1">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder2" viewBox="0 0 16 16">
-                    <path d="M1 3.5A1.5 1.5 0 0 1 2.5 2h2.764c.958 0 1.76.56 2.311 1.184C7.985 3.648 8.48 4 9 4h4.5A1.5 1.5 0 0 1 15 5.5v7a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 12.5v-9zM2.5 3a.5.5 0 0 0-.5.5V6h12v-.5a.5.5 0 0 0-.5-.5H9c-.964 0-1.71-.629-2.174-1.154C6.374 3.334 5.82 3 5.264 3H2.5zM14 7H2v5.5a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5V7z"/>
-                </svg>
-            </span>
-            <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="basic-addon1">
-        </div> -->
-
-        <a href="fileUproad.html" class="btn btn-light btn-lg">결함 탐지하기</a>
-        <br>
-        <br>
-        <br>
-        <hr> 
-    </div>
-
-
-  
+    </main>
+     
 
     <!-- 2파일 코드2 참고-->
     <!-- <form action="http://localhost/upload.php" method="post" enctype="multipart/form-data">
@@ -68,20 +91,6 @@
         <input type="submit">
     </form> -->
 
-    
-    <!-- 본문 -->
-    <!-- <main class="mb-4">
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-md-10 col-lg-8 col-xl-7">
-                    <h2>검사할 하수도관의 CCTV 이미지파일을 첨부해주세요</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur?</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium recusandae illo eaque architecto error, repellendus iusto reprehenderit, doloribus, minus sunt. Numquam at quae voluptatum in officia voluptas voluptatibus, minus!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur magnam, excepturi aliquid ex itaque esse est vero natus quae optio aperiam soluta voluptatibus corporis atque iste neque sit tempora!</p>
-                </div>
-            </div>
-        </div>
-    </main> -->
 
     <script>
 

@@ -44,8 +44,12 @@ index.html
 /*
 fileUproad.html
 */
-.head_bg {
-    position: relative;
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    
     margin-bottom: 3rem;
     padding-top: calc(6rem + 57px);
     padding-bottom: 6rem;
@@ -53,6 +57,22 @@ fileUproad.html
     background-size: cover;
     background-attachment: scroll;
   }
+  
+  #page1{
+    padding-top: 300px;
+  }
+  #page2{
+    padding-top: 300px;
+  }
+  /* .head_bg {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-top: calc(6rem + 57px);
+    padding-bottom: 6rem;
+    background: no-repeat center center;
+    background-size: cover;
+    background-attachment: scroll;
+  } */
 .fileupload{
     text-align: center;
 }
@@ -66,14 +86,14 @@ fileUproad.html
     height:2px;
     background-color:black;
 }
-  /* .masthead:before {
+  /* .head_bg:before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #212529;
+    background-color: #666060;
     opacity: 0.5;
   } */
   
@@ -84,7 +104,16 @@ fileUproad.html
 }
 
 
-
+/*
+파일선택 안보이기
+ .fileupload .insert input[type="file"] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+  } */
 /**/
 .fileupload .insert {
     padding: 20px 30px;
@@ -92,8 +121,6 @@ fileUproad.html
     width: 450px;
     margin: 5vh auto;
     
-    /* height: 90vh;  */
-   
     /* border: 1px solid red; */
 
     /* -webkit-box-sizing: border-box;
@@ -102,9 +129,12 @@ fileUproad.html
 }
 .fileupload .insert .file-list {
     height: 200px;
+    width: 380px;
     overflow: auto;
     border: 1px solid black;
     padding: 10px;
+    margin-top:10px;
+    text-align: left;
 }
 .fileupload .insert .file-list .filebox p {
     font-size: 14px;
@@ -116,5 +146,10 @@ fileUproad.html
     margin-left: 5px;
 }
 
+#input-file{
+    width: 330px;
+}
 
-
+.detect_btn, .show_detect_btn{
+    margin:100px 10px 100px 10px
+}
