@@ -153,3 +153,13 @@ header{
 .detect_btn, .show_detect_btn{
     margin:100px 10px 100px 10px
 }
+
+
+/*
+detectResult.html
+*/
+.bi{
+    font-size: 30px;
+    line-height: 22px;
+    color:black;
+}
