@@ -119,7 +119,7 @@ header{
 .fileupload_pg .insert {
     padding: 20px 30px;
     display: block;
-    width: 450px;
+    width: 700px;
     margin: 5vh auto;
     
     /* border: 1px solid red; */
@@ -130,7 +130,7 @@ header{
 }
 .fileupload_pg .insert .file-list {
     height: 200px;
-    width: 380px;
+    width: 640px;
     overflow: auto;
     border: 1px solid black;
     padding: 10px;
