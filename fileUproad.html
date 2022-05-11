@@ -34,15 +34,33 @@
                     <!-- 파일 코드 1-->
                 <div class="insert">
                     <form method="POST" onsubmit="return false;" enctype="multipart/form-data">
-                        <!-- <label className="input-file-button" for="input-file" class="btn btn-primary">파일 선택</label> -->
-                        <input type="file" id="input-file" onchange="addFile(this);" multiple />
+                                      
+                        <div class="input-group">
+                            <input type="file" class="form-control" id="inputGroupFile04" onchange="addFile(this);" multiple aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                            <input class="btn btn-outline-secondary"id="inputGroupFileAddon04" type="submit" value="업로드" >
+                        </div>
+                        <!-- <input type="file" id="input-file" onchange="addFile(this);" multiple /> -->
+
                         <!-- <input type="file" id="input-file" style = "display:none;" onchange="addFile(this);" multiple /> -->
-        
-                        <input type="submit" value="업로드" >
+                    
                         <div class="file-list"></div>
                     </form>
                 </div>
-        
+                <!-- 파일 업로드 꾸밈
+                  <form class="was-validated">
+                        
+                    <div class="mb-3">
+                      <input type="file" class="form-control" aria-label="file example" required>
+                    </div>
+                  </form> -->
+                  
+                    <!-- 2파일 코드2 참고-->
+                    <!-- <form action="http://localhost/upload.php" method="post" enctype="multipart/form-data">
+                        <input multiple="multiple"  type="file" name="filename[]" />
+                        <input type="submit">
+                    </form> -->
+
+                
                 <!-- 아이콘 참고-->
                 <!-- <i class="bi bi-folder-plus"></i>
                 <div class="input-group w-50">
@@ -88,11 +106,6 @@
     </main>
      
 
-    <!-- 2파일 코드2 참고-->
-    <!-- <form action="http://localhost/upload.php" method="post" enctype="multipart/form-data">
-        <input multiple="multiple"  type="file" name="filename[]" />
-        <input type="submit">
-    </form> -->
 
 
     <script src="javascript.js"></script>
