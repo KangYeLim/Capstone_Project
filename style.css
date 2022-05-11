@@ -56,13 +56,14 @@ header{
     background: no-repeat center center;
     background-size: cover;
     background-attachment: scroll;
+    z-index: 1;
   }
   
   #page1{
     padding-top: 300px;
   }
   #page2{
-    padding-top: 300px;
+    padding-top: 200px;
   }
   /* .head_bg {
     position: relative;
@@ -73,15 +74,15 @@ header{
     background-size: cover;
     background-attachment: scroll;
   } */
-.fileupload{
+.fileupload_pg, .progress_pg, .detect_pg{
     text-align: center;
 }
 
-.fileupload>a{
+.fileupload_pg>a{
     font-weight: bold;
 }
-.fileupload>hr{
-    margin:auto auto 30px auto;
+.fileupload_pg>hr{
+    margin:30px auto 30px auto;
     width:80%;
     height:2px;
     background-color:black;
@@ -97,16 +98,16 @@ header{
     opacity: 0.5;
   } */
   
-  .bi{
+  /* .bi{
     font-size: 22px;
     line-height: 22px;
     color:crimson;
-}
+} */
 
 
 /*
 파일선택 안보이기
- .fileupload .insert input[type="file"] {
+ .fileupload_pg .insert input[type="file"] {
     position: absolute;
     width: 0;
     height: 0;
@@ -115,7 +116,7 @@ header{
     border: 0;
   } */
 /**/
-.fileupload .insert {
+.fileupload_pg .insert {
     padding: 20px 30px;
     display: block;
     width: 450px;
@@ -127,7 +128,7 @@ header{
     -moz-box-sizing: border-box;
     box-sizing: border-box; */
 }
-.fileupload .insert .file-list {
+.fileupload_pg .insert .file-list {
     height: 200px;
     width: 380px;
     overflow: auto;
@@ -136,12 +137,12 @@ header{
     margin-top:10px;
     text-align: left;
 }
-.fileupload .insert .file-list .filebox p {
+.fileupload_pg .insert .file-list .filebox p {
     font-size: 14px;
     margin-top: 10px;
     display: inline-block;
 }
-.fileupload .insert .file-list .filebox .delete i{
+.fileupload_pg .insert .file-list .filebox .delete i{
     color: #ff5353;
     margin-left: 5px;
 }
@@ -150,10 +151,15 @@ header{
     width: 330px;
 }
 
-.detect_btn, .show_detect_btn{
+.detect_btn, .show_detect_btn, .predict_cost_btn {
     margin:100px 10px 100px 10px
 }
 
+.bi2{
+    font-size: 200px;
+    color:black;
+    
+}
 
 /*
 detectResult.html
@@ -162,4 +168,13 @@ detectResult.html
     font-size: 30px;
     line-height: 22px;
     color:black;
+}
+.progress{
+    margin-bottom: 50px;
+}
+.detect_pg>hr{
+    margin:30px auto 30px auto;
+    width:80%;
+    height:2px;
+    background-color:black;
 }
