@@ -151,7 +151,7 @@ header{
     width: 330px;
 }
 
-.detect_btn, .show_detect_btn, .predict_cost_btn {
+.detect_btn, .show_detect_btn, .predict_cost_btn, .show_cost_btn {
     margin:100px 10px 100px 10px
 }
 
@@ -177,4 +177,11 @@ detectResult.html
     width:80%;
     height:2px;
     background-color:black;
+}
+
+/*
+pipeExchange.html
+*/
+.show_cost_btn{
+    text-align: center;
 }

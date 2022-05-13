@@ -19,11 +19,64 @@
     <header style="background-image: url('images/background2.png')"></header>
 
     <main>
+        <section  id="page1">
+            
+            <div class="cost_pg">
 
-    
-     
+                <!-- <div class="show_cost_btn">
+                    <a href="detectResult.html" class="btn btn-outline-secondary btn-lg ">탐지 결과 보기</a>
+                </div> -->
+                <div class="container-md">
 
-    </main>
+                    <form>
+                        <div class="row mb-3">                    
+                            <label for="pipeLength" class="col-sm-4 col-form-label">파이프의 길이 (m)</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="pipeLength" placeholder="m 단위로 숫자만 입력하세요">
+                            </div>
+                        </div>
+
+                        <fieldset class="row mb-3">
+                        <legend class="col-form-label col-sm-4 pt-0">하수관의 종류를 선택하세요</legend>
+                        <div class="col-sm-8">
+                            <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" >
+                            <label class="form-check-label" for="gridRadios1">
+                                콘크리트관
+                            </label>
+                            </div>
+                            <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                            <label class="form-check-label" for="gridRadios2">
+                                강관
+                            </label>
+                            </div>
+                            <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" >
+                            <label class="form-check-label" for="gridRadios3">
+                                주철관
+                            </label>
+                            </div>
+
+                            <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4" >
+                            <label class="form-check-label" for="gridRadios4">
+                                플라스틱관
+                            </label>
+                            </div>
+
+                        </div>
+                        </fieldset>
+
+                        <div class="show_cost_btn">
+                            <a href="" class="btn btn-outline-secondary btn-lg ">교체비용 보기</a>
+                        </div> 
+                        
+                    </form>
+
+                </div>
+            </div>
+        </section>
      
 
     <script src="javascript.js"></script>
