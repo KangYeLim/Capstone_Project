@@ -5,6 +5,7 @@
     margin: 0px;
     padding: 0px;
     color: black;
+    
 }
 
 /*
@@ -74,13 +75,10 @@ header{
     background-size: cover;
     background-attachment: scroll;
   } */
-.fileupload_pg, .progress_pg, .detect_pg{
+.fileupload_pg, .progress_pg, .detect_pg, .cost_pg{
     text-align: center;
 }
 
-.fileupload_pg>a{
-    font-weight: bold;
-}
 .fileupload_pg>hr{
     margin:30px auto 30px auto;
     width:80%;
@@ -182,6 +180,12 @@ detectResult.html
 /*
 pipeExchange.html
 */
-.show_cost_btn{
-    text-align: center;
+.cost_pg>hr{
+    margin:30px auto 30px auto;
+    width:80%;
+    height:2px;
+    background-color:black;
+}
+.pipeInfoForm{
+    text-align: left;
 }
