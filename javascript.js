@@ -146,3 +146,45 @@ function deleteFile(num) {
             })
         }
     </script> */
+
+
+    
+
+//progress bar 부분
+    var progressBar = $('.progress-bar');
+    var progressNumber=0;
+
+    // setInterval(function(){
+    //     progressNumber++;
+    //     progressBar.css('width',progressNumber+'%');
+    //     progressBar.attr('aria-valuenow',progressNumber);
+    //     if( progressBar.attr('aria-valuenow')=="100"){
+    //          document.getElementById('icon2').innerHTML='<i class="bi2 bi-check-circle"></i>';
+    //      }
+        
+    // },100);
+
+    var intervalId= setInterval(function(){  //progress bar 동작
+   
+            progressNumber++;
+            progressBar.css('width',progressNumber+'%');
+            progressBar.attr('aria-valuenow',progressNumber);
+            console.log(progressNumber);
+
+            if(progressNumber=="100"){
+                clearInterval(intervalId);
+                document.getElementById('icon2').innerHTML='<i class="bi2 bi-check-circle"></i>';
+            }
+    },100);
+
+
+
+    // const a =  document.querySelector('.progress-bar');
+    // a.addEventListener(showIcon());
+
+    // function showIcon() {
+    //     // document.getElementById('icon2').innerHTML='<i class="bi2 bi-check-circle"></i>';
+    //     if(a.width==514){
+    //         document.getElementById('icon2').innerHTML='<i class="bi2 bi-check-circle"></i>';
+    //     }
+    // }
