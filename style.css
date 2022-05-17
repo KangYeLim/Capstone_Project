@@ -75,7 +75,7 @@ header{
     background-size: cover;
     background-attachment: scroll;
   } */
-.fileupload_pg, .progress_pg, 
+.fileupload_pg,.progress_bar_pg, .progress_pg, 
 .detect_pg, .pipe_info_pg,
  .cost_pg, .pipe_cost_pg{
     text-align: center;
@@ -142,25 +142,37 @@ header{
     margin-top: 10px;
     display: inline-block;
 }
-.fileupload_pg .insert .file-list .filebox .delete i{
+/* .fileupload_pg .insert .file-list .filebox .delete i{
     color: #ff5353;
     margin-left: 5px;
-}
+} 
 
 #input-file{
     width: 330px;
 }
-
+*/
 .detect_btn, .show_detect_btn, .predict_cost_btn, .show_cost_btn, .gohome_btn {
     margin:100px 10px 100px 10px
 }
 
-.bi2{
-    font-size: 200px;
-    color:black;
-    
+
+/*
+progress.html
+*/
+.progress_bar_pg>hr{
+    margin:30px auto 30px auto;
+    width:80%;
+    height:2px;
+    background-color:black;
 }
 
+.progress{
+    margin-top: 80px;
+}
+.bi2{
+    font-size: 200px;
+    color:black;    
+}
 /*
 detectResult.html
 */
@@ -169,9 +181,7 @@ detectResult.html
     line-height: 22px;
     color:black;
 }
-.progress{
-    margin-bottom: 50px;
-}
+
 .detect_pg>hr{
     margin:30px auto 30px auto;
     width:80%;

@@ -154,16 +154,6 @@ function deleteFile(num) {
     var progressBar = $('.progress-bar');
     var progressNumber=0;
 
-    // setInterval(function(){
-    //     progressNumber++;
-    //     progressBar.css('width',progressNumber+'%');
-    //     progressBar.attr('aria-valuenow',progressNumber);
-    //     if( progressBar.attr('aria-valuenow')=="100"){
-    //          document.getElementById('icon2').innerHTML='<i class="bi2 bi-check-circle"></i>';
-    //      }
-        
-    // },100);
-
     var intervalId= setInterval(function(){  //progress bar 동작
    
             progressNumber++;
