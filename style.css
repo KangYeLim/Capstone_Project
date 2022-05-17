@@ -60,14 +60,11 @@ header{
     z-index: 1;
   }
   
-  #page1, #page3{
+  #page1{
     padding-top: 300px;
   }
   #page2{
     padding-top: 200px;
-  }
-  #page4{
-    padding-top: 400px;
   }
   /* .head_bg {
     position: relative;
@@ -78,7 +75,9 @@ header{
     background-size: cover;
     background-attachment: scroll;
   } */
-.fileupload_pg, .progress_pg, .detect_pg, .pipe_info_pg, .cost_pg{
+.fileupload_pg, .progress_pg, 
+.detect_pg, .pipe_info_pg,
+ .cost_pg, .pipe_cost_pg{
     text-align: center;
 }
 
@@ -194,4 +193,14 @@ pipeExchange.html
     margin-top: 50px;
     border: 1px solid black;
     padding : 20px 50px 20px 50px;
+}
+
+/*
+pipeCost.html
+*/
+.pipe_cost_pg>hr{
+    margin:30px auto 30px auto;
+    width:80%;
+    height:2px;
+    background-color:black;
 }
